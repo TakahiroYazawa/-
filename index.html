@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel = "stylesheet" href="style.css">
+
+    <title>トリアージ</title>
+</head>
+<body class="bg-light">
+    
+    <div class="container w-75">
+        <h1 class="text-center text-info my-4">トリアージ連絡</h1>
+        <form id="form" class="mb-4">
+            <input type="text" id="input" class="form-control"
+            placeholder="名前" autocomplete="off">
+        </form>
+        
+        <!--<label>期日： <input type="date"></label><br> -->
+
+        <label>
+            症状: 
+        </label>
+        <select id='selbox'>
+            <option value='0'>レベル０</option>
+            <option value='1'>レベルⅠ</option>
+            <option value='2'>レベルⅡ</option>
+            <option value='3' selected>レベルⅢ</option>
+        </select><br>
+        
+        <div class='explanation'>
+             <h>※表示の解説</h>
+            <p>レベルⅢ(緑色)：軽傷の人<br>
+            レベルⅡ(黄色)：バイタルが安定している人<br>
+            レベルⅠ(赤色)：重症でバイタルが安定していない人<br>
+            レベル0(黒色)：息をしていない・助けられない人</p>
+        </div>
+        
+
+        <ul class="list-group text-secondary" id ="ul">index.js</ul>
+    </div>
+    
+    <script src="index.js"></script>
+
+</body>
+<footer>
+    <!--<h>※表示の解説</h>
+    <p>緑色：軽傷の人<br>
+        黄色：バイタルが安定している人<br>
+        赤色：重症でバイタルが安定していない人<br>
+        黒色：息をしていない・助けられない人</p> -->
+</footer>
+</html>
